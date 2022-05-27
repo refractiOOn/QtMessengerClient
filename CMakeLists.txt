@@ -10,6 +10,9 @@ find_package(Qt6 6.2 COMPONENTS Core Quick Network REQUIRED)
 
 qt_add_executable(appQtMessengerClient
     main.cpp
+
+    Utilities/Request/AbstractRequest.hpp Utilities/Request/AbstractRequest.cpp
+    Utilities/Request/AuthorizationRequest.hpp Utilities/Request/AuthorizationRequest.cpp
 )
 
 qt_add_qml_module(appQtMessengerClient
